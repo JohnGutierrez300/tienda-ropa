@@ -71,6 +71,7 @@ nav a {
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .categoria {
@@ -92,7 +93,7 @@ nav a {
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -761,14 +762,8 @@ body {
 
 
 .admin-panel {
-
-    width: 1200px;
-
-    margin: auto;
-
-    padding: 40px;
-
-}
+    width: 95%;
+    max-width: 1200px;
 
 #formProducto {
 
@@ -813,11 +808,7 @@ body {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
-
-}
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 .admin-card {
 
@@ -977,19 +968,8 @@ body {
 
 #panelAdminProductos {
 
-    width: 900px;
-
-    margin: 40px auto;
-
-    background: white;
-
-    padding: 35px;
-
-    border-radius: 18px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
-
-}
+    width: 95%;
+    max-width: 900px;
 
 #panelAdminProductos h2 {
 
@@ -1334,23 +1314,8 @@ PANEL ADMIN HOMBRES
 
 .admin-panel-box {
 
-    width: 900px;
-
-    max-width: 95%;
-
-    margin: 40px auto;
-
-    background: white;
-
-    border-radius: 20px;
-
-    padding: 35px;
-
-    box-shadow: 0 10px 35px rgba(0, 0, 0, .15);
-
-    text-align: center;
-
-}
+    width: 95%;
+    max-width: 900px;
 
 .admin-panel-box h2 {
 
@@ -1497,6 +1462,110 @@ PANEL ADMIN HOMBRES
 
         transform: translateX(0);
 
+    }
+
+}
+
+
+/* ==========================
+   RESPONSIVE CELULARES
+========================== */
+
+@media (max-width:768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .categorias,
+    .productos {
+        padding: 20px;
+    }
+
+    .contenedor-categorias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoria {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .login-card,
+    .contacto-card,
+    .admin-panel-box,
+    #panelAdminProductos {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #formProducto {
+        grid-template-columns: 1fr;
+    }
+
+    #formProducto button {
+        grid-column: auto;
+    }
+
+    .modal-contenido {
+        width: 95%;
+    }
+
+    .modal-botones {
+        flex-direction: column;
+    }
+
+    .confirmar-card {
+        width: 90%;
+    }
+
+    #adminBarra {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .toast {
+        left: 10px;
+        right: 10px;
+        width: auto;
+        top: 15px;
+        text-align: center;
     }
 
 }
