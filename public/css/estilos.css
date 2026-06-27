@@ -1548,3 +1548,308 @@ PANEL ADMIN HOMBRES
     }
 
 }
+
+
+
+/* =================================
+   AJUSTE CELULAR REAL
+================================= */
+
+@media (max-width: 768px) {
+
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* HEADER */
+
+    header {
+        padding: 15px 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .logo img {
+        height: 55px;
+    }
+
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+
+    /* BANNER */
+
+    .banner {
+
+        height: auto;
+        min-height: 350px;
+        padding: 40px 15px;
+
+    }
+
+
+    .banner h1 {
+
+        font-size: 30px;
+        line-height: 1.2;
+
+    }
+
+
+    .banner p {
+
+        font-size: 17px;
+
+    }
+
+
+
+    /* PRODUCTOS */
+
+    .productos {
+
+        padding: 15px;
+
+    }
+
+
+    .grid-productos {
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+    }
+
+
+    .card {
+
+        width: 100%;
+
+    }
+
+
+    .card img {
+
+        height: 230px;
+
+    }
+
+
+
+    /* CATEGORIAS */
+
+
+    .categorias {
+
+        padding: 20px 10px;
+
+    }
+
+
+    .contenedor-categorias {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .categoria {
+
+        width: 90%;
+
+    }
+
+
+
+    /* LOGIN */
+
+
+    .login-container {
+
+        padding: 15px;
+
+    }
+
+
+    .login-card {
+
+        width: 100%;
+        padding: 25px;
+
+    }
+
+
+
+    /* CONTACTO */
+
+
+    .contacto-container {
+
+        padding: 15px;
+
+    }
+
+
+    .contacto-card {
+
+        width: 100%;
+        padding: 25px;
+
+    }
+
+
+
+    /* CARRITO */
+
+
+    .btn-vaciar,
+    .btn-seguir {
+
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+
+    }
+
+
+
+    /* BIENVENIDA */
+
+
+    .bienvenida-card {
+
+        width: 95%;
+        padding: 25px;
+
+    }
+
+
+    .bienvenida h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .bienvenida p {
+
+        font-size: 17px;
+
+    }
+
+
+    .opciones {
+
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+
+    .opciones button {
+
+        width: 100%;
+        height: 70px;
+        font-size: 18px;
+
+    }
+
+
+
+    /* ADMIN */
+
+
+    .admin-panel,
+    .admin-panel-box {
+
+        width: 100%;
+        padding: 15px;
+
+    }
+
+
+    #formProducto {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    #formProducto button {
+
+        grid-column: auto;
+
+    }
+
+
+    #listaProductos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .admin-card {
+
+        width: 100%;
+
+    }
+
+
+    .admin-botones {
+
+        flex-direction: column;
+
+    }
+
+
+    .editar,
+    .eliminar {
+
+        width: 100%;
+
+    }
+
+
+
+    /* MODALES */
+
+    .modal-contenido {
+
+        padding: 20px;
+        width: 95%;
+
+    }
+
+
+    .modal-botones {
+
+        flex-direction: column;
+
+    }
+
+
+    .btn-cancelar,
+    .btn-guardar {
+
+        width: 100%;
+
+    }
+
+
+}
