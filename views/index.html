@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LM Fashion</title>
+        <link rel="stylesheet" href="/css/estilos.css">
+    </head>
+
+    <body>
+
+        <div id="bienvenida" class="bienvenida">
+        
+            <div class="bienvenida-card">
+        
+                <img src="/img/logo.png" class="bienvenida-logo">
+        
+                <h1>Bienvenido a LM Fashion</h1>
+        
+                <p>
+                    Descubre nuestra colección y elige por dónde deseas comenzar.
+                </p>
+        
+                <div class="opciones">
+        
+                    <button id="btnHombre">
+                        👔 Moda para Hombre
+                    </button>
+        
+                    <button id="btnMujer">
+                        👗 Moda para Mujer
+                    </button>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <header>
+            <div class="logo">
+                <img src="/img/logo.png" alt="Logo LM Fashion">
+            </div>
+
+            <nav>
+                
+                <a href="/hombres">Hombres</a>
+                <a href="/mujeres">Mujeres</a>
+                <a href="/ofertas">Ofertas</a>
+                <a href="/contacto">Contacto</a>
+                <a href="/login" id="btnLogin">Login</a>
+            </nav>
+            <div id="adminBarra"></div>
+        </header>
+
+        <section class="banner">
+            <h1>Nueva Colección 2026</h1>
+            <p>Moda moderna para todos los estilos</p>
+            <button onclick="location.href='/hombres'">
+                Comprar Ahora
+            </button>
+        </section>
+
+        <section class="categorias">
+
+            <h2>Categorías</h2>
+
+            <div class="contenedor-categorias">
+
+                <div class="categoria">👔 Camisas</div>
+                <div class="categoria">👖 Jeans</div>
+                <div class="categoria">🧥 Chaquetas</div>
+                <div class="categoria">👟 Calzado</div>
+
+            </div>
+
+        </section>
+
+        <section class="productos">
+
+            <h2>Productos Más Populares</h2>
+
+            <div class="grid-productos">
+
+                <a href="/hombres" class="card">
+
+                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=500"
+                        alt="Camisa Premium Hombre">
+
+                    <h3>Camisa Premium Hombre</h3>
+
+                    <p>Producto más vendido</p>
+
+                </a>
+
+                <a href="/hombres" class="card">
+
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+                        alt="Chaqueta Urbana Hombre">
+
+                    <h3>Chaqueta Urbana Hombre</h3>
+
+                    <p>Producto destacado</p>
+
+                </a>
+
+                <a href="/mujeres" class="card">
+
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500" alt="Vestido Elegante">
+
+                    <h3>Vestido Elegante</h3>
+
+                    <p>Favorito de nuestras clientes</p>
+
+                </a>
+
+                <a href="/mujeres" class="card">
+
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500" alt="Tacones Clásicos">
+
+                    <h3>Tacones Clásicos</h3>
+
+                    <p>Top ventas</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 LM Fashion - Todos los derechos reservados</p>
+        </footer>
+        
+<script src="/js/bienvenida.js"></script>
+<script src="/js/adminSesion.js"></script>
+
+    </body>
+    
+
+    </html>

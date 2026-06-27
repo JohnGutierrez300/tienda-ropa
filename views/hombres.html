@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hombres</title>
+
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo">
+        </div>
+
+        <nav>
+
+            <a href="/">Inicio</a>
+            <a href="/hombres">Hombres</a>
+            <a href="/mujeres">Mujeres</a>
+            <a href="/ofertas">Ofertas</a>
+            <a href="/contacto">Contacto</a>
+            <a href="/login" id="btnLogin">Login</a>
+
+        </nav>
+
+        <div id="adminBarra"></div>
+
+    </header>
+
+
+
+    <section class="categorias">
+
+        <h1>Colección para Hombres</h1>
+
+        <div class="contenedor-categorias">
+
+            <div class="categoria">
+                <h3>👔 Camisas</h3>
+                <p>Casuales y elegantes</p>
+            </div>
+
+            <div class="categoria">
+                <h3>👖 Jeans</h3>
+                <p>Diferentes estilos</p>
+            </div>
+
+            <div class="categoria">
+                <h3>🧥 Chaquetas</h3>
+                <p>Moda urbana y deportiva</p>
+            </div>
+
+            <div class="categoria">
+                <h3>👟 Calzado</h3>
+                <p>Tenis y zapatos</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="productos">
+
+        <h2>Productos para Hombre</h2>
+
+        <!-- PANEL SOLO PARA ADMIN -->
+        <div id="panelAdminProductos" style="display:none;">
+
+            <div class="admin-panel-box">
+
+                <h2>👑 Panel del Administrador</h2>
+
+                <p>
+                    Agrega nuevos productos para la sección de hombres.
+                </p>
+
+                <form id="formProducto" enctype="multipart/form-data">
+
+                    <input type="text" id="nombre" placeholder="Nombre del producto" required>
+
+                    <textarea id="descripcion" placeholder="Descripción del producto" required></textarea>
+
+                    <input type="number" id="precio" placeholder="Precio" required>
+
+                    <input type="number" id="stock" placeholder="Stock disponible" required>
+
+                    <input type="file" id="imagen" accept="image/*" required>
+
+                    <img id="preview" src="" alt="Vista previa" style="display:none;">
+
+                    <button type="submit">
+
+                        💾 Guardar Producto
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AQUÍ SE CARGAN TODOS LOS PRODUCTOS -->
+        <div class="grid-productos" id="listaProductos">
+
+        </div>
+
+    </section>
+
+<div id="toast" class="toast"></div>
+
+<!-- ===========================
+MODAL EDITAR PRODUCTO
+=========================== -->
+
+<div id="modalEditar" class="modal">
+
+    <div class="modal-contenido">
+
+        <h2>✏ Editar producto</h2>
+
+        <input id="editNombre" type="text">
+
+        <textarea id="editDescripcion"></textarea>
+
+        <input id="editPrecio" type="number">
+
+        <input id="editStock" type="number">
+
+        <div class="modal-botones">
+
+            <button class="btn-cancelar" onclick="cerrarModalEditar()">
+
+                Cancelar
+
+            </button>
+
+            <button class="btn-guardar" onclick="guardarEdicion()">
+
+                Guardar cambios
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===========================
+MODAL ELIMINAR
+=========================== -->
+
+<div id="modalEliminar" class="confirmar">
+
+    <div class="confirmar-card">
+
+        <h2>🗑 Eliminar producto</h2>
+
+        <p>
+
+            ¿Seguro que deseas eliminar este producto?
+
+        </p>
+
+        <button class="btn-no" onclick="cerrarEliminar()">
+
+            Cancelar
+
+        </button>
+
+        <button class="btn-si" onclick="confirmarEliminar()">
+
+            Eliminar
+
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="/js/hombres.js"></script>
+    <script src="/js/adminSesion.js"></script>
+
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - LM Fashion</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+
+    
+    <header>
+
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo">
+        </div>
+
+        <nav>
+            
+            <a href="/hombres">Hombres</a>
+            <a href="/mujeres">Mujeres</a>
+            <a href="/ofertas">Ofertas</a>
+            <a href="/contacto">Contacto</a>
+            <a href="/login" id="btnLogin">Login</a>
+        </nav>
+<div id="adminBarra"></div>
+    </header>
+
+    <section class="login-container">
+
+        <div class="login-card">
+
+            <h1>Bienvenido a LM Fashion</h1>
+
+            <div id="mensajeLogin" class="mensaje-login"></div>
+
+            <p>
+                Inicia sesión para acceder a tus compras,
+                pedidos, promociones y novedades exclusivas.
+            </p>
+
+            <form id="loginForm">
+            
+                <div class="campo">
+                    <label>Correo Electrónico</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+            
+                <div class="campo">
+                    <label>Contraseña</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+            
+                <button type="submit" class="btn-login">
+                    Iniciar Sesión
+                </button>
+            
+            </form>
+            
+            <script src="/js/login.js"></script>
+
+            
+
+        </div>
+
+    </section>
+    
+<script src="/js/adminSesion.js"></script>
+
+</body>
+
+</html>
