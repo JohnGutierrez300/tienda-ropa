@@ -37,8 +37,8 @@ exports.crearProducto = async (req, res) => {
     stock: req.body.stock,
 
     imagen: req.file
-        ? "/uploads/" + req.file.filename
-        : ""
+    ? `data:${req.file.mimetype};base64,${req.file.buffer.toString("base64")}`
+    : ""
 
 });
 
